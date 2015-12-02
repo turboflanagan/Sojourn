@@ -1,5 +1,5 @@
 
-	function Skills(level,topic,activity){
+	function Skills(level,topic,activity,url){
 		this.level = level;
 		this.topic = topic;
 		this.activity = activity;
@@ -17,7 +17,7 @@
 	reqSkills.push(new Skills ("Lead Facilitator","Highs","Double ZipLine"));
 	reqSkills.push(new Skills ("Lead Facilitator","Highs","TEC Course Facilitation"));
 	reqSkills.push(new Skills ("Lead Facilitator","Highs","Cargo Net Climb"));
-	reqSkills.push(new Skills ("Lead Facilitator","Highs","Crate'r Mountain"));
+ 	reqSkills.push(new Skills ("Lead Facilitator","Highs","Crate'r Mountain"));
 	reqSkills.push(new Skills ("Site Director","Highs","Dynamic Elements on Static"));
 	reqSkills.push(new Skills ("Facilitator","Safety","Spotting Instructions"));
 	reqSkills.push(new Skills ("Facilitator","Safety","Seat Harness Instruction"));
@@ -28,8 +28,8 @@
 	reqSkills.push(new Skills ("Facilitator","Safety","Belaying with Gri-Gri"));
 	reqSkills.push(new Skills ("Facilitator","Safety","Belaying with JRD (pole)"));
 	reqSkills.push(new Skills ("Lead Facilitator","Safety","TEC Ground School"));
-	reqSkills.push(new Skills ("Facilitator","Knots","<a href='http://www.animatedknots.com/bowlinebight/'>Bowline on a Bite</a>"));
-	reqSkills.push(new Skills ("Facilitator","Knots","<a href='http://www.animatedknots.com/doubleoverhand/'>Fisherman's Knot</a>"));
+	reqSkills.push(new Skills ("Facilitator","Knots","Bowline on a Bite","http://www.animatedknots.com/bowlinebight/>"));
+	reqSkills.push(new Skills ("Facilitator","Knots","Fisherman's Knot","http://www.animatedknots.com/doubleoverhand/>"));
 	reqSkills.push(new Skills ("Lead Facilitator","Knots","Figure 8 on a bite"));
 	reqSkills.push(new Skills ("Lead Facilitator","Knots","<a href='http://www.animatedknots.com/fig8follow/'>Figure 8 follow through</a>"));
 	reqSkills.push(new Skills ("Lead Facilitator","Knots","Hitch for stringing elements"));
@@ -59,7 +59,10 @@
 	reqSkills.push(new Skills ("Other","Additional","Right Path"));
 	reqSkills.push(new Skills ("Other","Additional","High Performing Team"));
 	reqSkills.push(new Skills ("Other","Additional","The Power of Choice"));
-	
+	reqSkills.push(new Skills ("Facilitator","Written Exam","Facilitator Exam"));
+	reqSkills.push(new Skills ("Lead Facilitator","Written Exam","Lead Facilitator Exam w/ACCT cert"));
+	reqSkills.push(new Skills ("Site Director","Written Exam","Site Director Exam w/ACCT cert"));
+
 	console.log(reqSkills);
 
 
