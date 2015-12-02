@@ -1,0 +1,9 @@
+li {
+	list-style: none;
+}
+
+.activity {
+	border: 1px solid;
+	margin: 3px;
+	float: left;
+}

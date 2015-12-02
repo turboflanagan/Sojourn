@@ -1,6 +1,13 @@
-var sojournApp = angular.module('sojournApp', []);
+var myApp = angular.module('myApp', []);
 
-sojournApp.controller('sojournApp', function ($scope,){
-
+myApp.controller('myController', function($scope){
+	$scope.reqSkills = reqSkills;
+});
 	
-}):
+
+
+
+
+
+
+
