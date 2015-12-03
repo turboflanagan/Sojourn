@@ -52,7 +52,7 @@
 			<div id="knots" class="col-sm-10 .col-md-12 activity"><h4>Knots</h4>
 				<div class="col-sm-6 activity">
 					<ul ng-repeat="skill in reqSkills | filter: {topic: 'Knots'}">
-						<li><input type="checkbox"/><label><a href={{skill.activity}}</a></label></li>
+						<li><input type="checkbox"/><label><a href="{{skill.activity}}">{{skill.lable}}</a></label></li>
 					</ul>
 				</div>
 			</div>
