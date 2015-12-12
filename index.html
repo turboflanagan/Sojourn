@@ -17,23 +17,14 @@
   </script>
 </head>
 <body ng-controller="myController">
-
-<!-- =============================================================== -->
-
-
-
-
-
-
-
-
-
-<!-- =========================================================== -->
-
 	<div id="page-wrapper" class="container">
 		<div id="header-wrapper">
-			<div id="header-title"><h1>Sojourn Facilitator Check List</h1></div>
-			<div id="facilitator-name"><h2>Name:</h2></div>
+			<div id="header-title">
+				<h1>Sojourn Facilitator Check List</h1>
+			</div>
+			<div id="facilitator-name">
+				<h2>Name:</h2>
+			</div>
 			<div id="disclaimer">
 				<p>By checking below, I indicate that I have been trained and feel comfortable leading each of these activities/skills:
 			</div>
@@ -89,187 +80,132 @@
     			<div class="panel-heading" role="tab" id="headingFour">
       				<h4 class="panel-title">
         				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          					Safety
+          					Knots
         				</a>
       				</h4>
     			</div>
     			<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       				<div class="panel-body">
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Safety'}">
+						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Knots'}">
+							<li><input type="checkbox"/><label><a href="{{skill.activity}}">{{skill.lable}}</a></label></li>
+						</ul>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading" role="tab" id="headingFive">
+      				<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          					Training
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      				<div class="panel-body">
+						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Training'}">
+							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
+						</ul>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading" role="tab" id="headingSix">
+      				<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          					Rescue Training
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      				<div class="panel-body">
+						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Rescue Training'}">
+							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
+						</ul>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading" role="tab" id="headingSeven">
+      				<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          					Shadowing
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      				<div class="panel-body">
+						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Shadowing'}">
+						<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
+					</ul>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading" role="tab" id="headingEight">
+      				<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseeight">
+          					Documented Hours
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+      				<div class="panel-body">
+						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Documented Hours'}">
+						<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
+					</ul>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading" role="tab" id="headingNine">
+      				<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          					Written Exam
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+      				<div class="panel-body">
+						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Written Exam'}">
+							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
+						</ul>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading" role="tab" id="headingTen">
+      				<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          					Certification
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+      				<div class="panel-body">
+						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Certification'}">
+							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
+						</ul>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading" role="tab" id="headingEleven">
+      				<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+          					Additional Skills
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+      				<div class="panel-body">
+						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Additional'}">
 							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
 						</ul>
       				</div>
     			</div>
   			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-	  		<div class="panel panel-default">
-	    		<div class="panel-heading" role="tab" id="headingOne">
-	      		<h4 class="panel-title">
-        			<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-	          			Lows
-	        		</a>
-	      		</h4>
-	    		</div>
-    			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-	      			<div class="panel-body">
-	        			[Add Low elements here...]
-	      			</div>
-	    		</div>
-	  		</div>
- 		</div>		
-
-		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-		  	<div class="panel panel-default">
-		    	<div class="panel-heading" role="tab" id="headingOne">
-			      	<h4 class="panel-title">
-    	    			<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-			          		Highs
-			        	</a>
-			      	</h4>
-		    	</div>
-	    		<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-			      	<div class="panel-body">
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Highs'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-			      	</div>
-		    	</div>
-		  	</div>
-		 </div>
-
-		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-		  	<div class="panel panel-default">
-		    	<div class="panel-heading" role="tab" id="headingThree">
-			      	<h4 class="panel-title">
-    	    			<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-			          		Safety
-			        	</a>
-			      	</h4>
-		    	</div>
-	    		<div id="collapse/Three" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-			      	<div class="panel-body">
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Safety'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-			      	</div>
-		    	</div>
-		  	</div>
-		 </div>
-
- -->
-
-
-		<!-- <div id="accordion">
-			<div class="row">
-				<div id="low-elements" class="col-sm-10 .col-md-12 activity" >
-							<h4>Lows</h4>
-				</div>
-			</div> -->
-
-
-<!-- 			<div class="row">
-				<div id="high-elements" class="col-sm-10 .col-md-12 activity"><h4>Highs</h4>
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Highs'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-				</div>
-			</div>
- -->
-
-			<!-- <div class="row">
-				<div id="safety" class="col-sm-10 .col-md-12 activity"><h4>Safety</h4>
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Safety'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-				</div>
-			</div> -->
-
-			<div class="row">
-				<div id="knots" class="col-sm-10 .col-md-12 activity"><h4>Knots</h4>
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Knots'}">
-							<li><input type="checkbox"/><label><a href="{{skill.activity}}">{{skill.lable}}</a></label></li>
-						</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div id="training" class="col-sm-10 .col-md-12 activity"><h4>Training</h4>
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Training'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div id="rescue" class="col-sm-10 .col-md-12 activity"><h4>Rescue Training</h4>
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Rescue Training'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-				</div>
-			</div>
-
-			<div class="row">	
-				<div id="shadowing" class="col-sm-10 .col-md-12 activity"><h4>Shadowing</h4>
-					<ul ng-repeat="skill in reqSkills | filter: {topic: 'Shadowing'}">
-						<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div id="doc-hours" class="col-sm-10 .col-md-12 activity"><h4>Documented Hours</h4>
-					<ul ng-repeat="skill in reqSkills | filter: {topic: 'Documented Hours'}">
-						<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div id="exam" class="col-sm-10 .col-md-12 activity"><h4>Written Exam</h4>
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Written Exam'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div id="cert" class="col-sm-10 .col-md-12 activity"><h4>Certification</h4>
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Certification'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div id="more-skills" class="col-sm-10 .col-md-12 activity"><h4>Additional Skills</h4>
-						<ul ng-repeat="skill in reqSkills | filter: {topic: 'Additional'}">
-							<li><input type="checkbox"/><label>{{skill.activity}}</label></li>
-						</ul>
-				</div>
-			</div>
-		</div>
-
-		<div id="footer">	
-
-		</div>
-
-</div>
-	
+	</div>
 </body>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
