@@ -13,10 +13,27 @@ li {
 	margin-bottom: 50px;
 }
 
+#header-wrapper {
+	background-image: url("tanbg.png");
+	background-color: #E2E4DB;
+	width: 100%;
+	padding: 0px 20px;
+	border-radius: 8px;
+}
+
 .panel {
 	width: 80%;
 }
 
+.panel-group {
+	margin-left: 30px;
+}
+
 a {
 	margin: auto;
-	})
+	}
+
+body {
+	background-image: url("darkgreenbg.png");
+	background-color: #ffffff;
+}
