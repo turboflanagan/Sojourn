@@ -16,7 +16,7 @@ li {
 #header-wrapper {
 	background-image: url("tanbg.png");
 	background-color: #E2E4DB;
-	width: 100%;
+	width: 80%;
 	padding: 0px 20px;
 	border-radius: 8px;
 }
@@ -25,8 +25,24 @@ li {
 	width: 80%;
 }
 
+.panel-default {
+	background-image: url("tanbg.png");
+	background-color: #E2E4DB;
+	border-radius: 8px !important;
+}
+
 .panel-group {
-	margin-left: 30px;
+	border-radius: 8px !important;
+}
+
+.panel-heading {
+	background-image: url("tanbg.png") !important;
+	background-color: #E2E4DB !important;
+	border-radius: 8px !important;
+}
+
+.panel-collapse {
+	border-radius: 8px !important;
 }
 
 a {
